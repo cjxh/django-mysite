@@ -33,6 +33,7 @@ To add an app to the project, run `./manage.py startapp <app_name>`
 `postgres=# ALTER ROLE myprojectuser SET default_transaction_isolation TO 'read committed';` blocks reads from uncommitted transactions
 `postgres=# ALTER ROLE myprojectuser SET timezone TO 'UTC';`
 `postgres=# GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;` to give db user access rights to the db
+3. To stop DB: `$ brew services stop postgresql`
 
 ## Configure Django DB Settings
 In `~/<path-to-project>/mysite/settings.py`, replace the following:
