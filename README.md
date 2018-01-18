@@ -52,3 +52,6 @@ DATABASES = {
 
 . . .
 ```
+
+## Launch Django Server
+Run `./manage.py runserver` in the console, then visit `localhost:8000`.
