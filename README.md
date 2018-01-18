@@ -55,3 +55,19 @@ DATABASES = {
 
 ## Launch Django Server
 Run `./manage.py runserver` in the console, then visit `localhost:8000`.
+
+## Migrate DB and Test
+Run `./manage.py makemigrations` to initialize/create migrations.
+(Alternatively run `./manage.py makemigrations <app-name> --name <migration-name>` to create a migration file `models/migration-file.py`.)
+Run `./manage.py migrate` to apply the migrations and create the Django tables.
+
+## Set up Admin
+1. To create admin account: `./manage.py createsuperuser`
+2. Start the Django server.
+3. Visit `localhost:8000/admin` and login.
+
+## Connect Postgresql DB with PyCharm
+`Database` > `+` > `Add a DataSource`
+URL: `jdbc:postgresql://localhost:5432/myproject` and fill in fields accordingly.
+Then, `Test Connection` should yield `Successful`.
+`django_migrations` table should be populated with the latest migrations.
