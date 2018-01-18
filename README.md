@@ -1,5 +1,5 @@
 # django-mysite
-Creating a django app from scratch.
+Creating a django app from scratch. Practice with migrations.
 
 ## Set up application
 1. Using PyCharm, `Create New Project` > `Django`. 
